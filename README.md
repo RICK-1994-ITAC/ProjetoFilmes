@@ -1,7 +1,7 @@
 # **Site: Lista De Filmes** 📺 #
 ***
 ### Link Do Site: 🔗 ###
-
+**Abra este Link em uma nova Janela: [Site Filmes Favoritos](https://rick-1994-itac.github.io/ProjetoFilmes/)**
 ***
 ### Descrição: 📖 ###
 Site desenvolvido com Javascript, Css e Html. Consiste em adicionar filmes favoritos em uma lista. podendo ao mesmo tempo, remove-los.
