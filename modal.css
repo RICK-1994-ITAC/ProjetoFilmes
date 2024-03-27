@@ -1,0 +1,86 @@
+:root {
+    --primeira_cor:#070732;
+    --segunda_cor:#003853;
+    --terceira_cor:#3D82AB;
+    --quarta_cor:#45BB89;
+    --quinta_cor:#dbebe7;
+}
+
+#camada-transparente{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.esconder {
+    visibility: hidden;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.aparecer {
+    visibility:visible;
+    opacity: 1;
+}
+
+#camada-filme {
+    background-color: var(--terceira_cor);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.4;
+}
+
+#filme-selecionado {
+    z-index: 1;
+    background-color: var(--quinta_cor);
+    padding:1rem 3rem;
+    border-radius: 10px;
+}
+
+#corpo-filme {
+   display: flex;
+   justify-content: center;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 300px;
+    padding: 1.5rem;
+}
+
+#titulo-filme {
+    display: flex;
+    padding: 1rem 0;
+}
+
+#poster-modal {
+    border-radius: 20px;
+}
+
+#rodape {
+    padding: 1rem 0;
+}
+
+#adc {
+    cursor: pointer;
+    border: 2px solid var(--segunda_cor);
+    width: 100%;
+    padding: 0.3rem;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px black;
+}
+
+#adc:focus,
+#adc:hover {
+    background-color: var(--segunda_cor);
+    color: var(--quinta_cor);
+}
