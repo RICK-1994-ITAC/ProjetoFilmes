@@ -6,7 +6,7 @@ let listafilme = JSON.parse(localStorage.getItem('movieList')) ?? []
 
 async function consultaApi() {
     try {
-      let url =(`http://www.omdbapi.com/?apikey=${key}&t=${validationName()}${validationDate()}`)
+      let url =(`https://www.omdbapi.com/?apikey=${key}&t=${validationName()}${validationDate()}`)
 
     const resposta = await fetch(url)
     const data = await resposta.json()
